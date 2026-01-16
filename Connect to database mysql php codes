@@ -1,0 +1,11 @@
+//how to connect to mysqli database
+
+<?php
+$connect = mysqli_connect("localhost","root"," ");
+$db = mysqli_select_db($connect,"mydb");
+if(!$connect)
+{
+  echo "database connection error!";
+}
+
+?>
